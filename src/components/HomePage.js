@@ -1,11 +1,12 @@
 import React from 'react';
+import HeroBanner from './HeroBanner';
+import SearchBar from './SearchBar';
 
 function HomePage() {
   return (
-    <div className="container">
-      <h1>Welcome to Airbnb Clone</h1>
-      {/* Homepage content */}
-      <p>Find your perfect accommodation.</p>
+    <div className="homepage">
+      <HeroBanner />
+      <SearchBar />
     </div>
   );
 }
