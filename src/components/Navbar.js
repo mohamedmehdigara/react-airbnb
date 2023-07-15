@@ -5,13 +5,13 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/">
-        <img src="logo.png" alt="Airbnb Logo" />
+        <img src="logo.png" alt="Airbnb Logo" className="logo" />
       </Link>
       <div className="navbar-links">
         <Link to="/become-a-host">Become a host</Link>
         <Link to="/help">Help</Link>
-        <Link to="/sign-up">Sign up</Link>
-        <Link to="/log-in">Log in</Link>
+        <Link to="/sign-up" className="btn btn-primary">Sign up</Link>
+        <Link to="/log-in" className="btn btn-secondary">Log in</Link>
       </div>
     </nav>
   );
