@@ -1,147 +1,267 @@
-/* Navbar styles */
+/* Global Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navigation Bar */
 .navbar {
-  background-color: #fff;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
 }
 
-.logo {
-  height: 30px;
+.navbar .logo {
+  height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-links a {
   text-decoration: none;
   color: #333;
-  margin-right: 10px;
+  padding: 0.5rem 1rem;
 }
 
-.btn {
-  padding: 10px 20px;
+.navbar-links a.btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
-  font-size: 16px;
-  text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.btn-primary {
-  background-color: #f5483b;
-  color: #fff;
+.navbar-links a.btn:hover {
+  background-color: #3e8e41;
 }
 
-.btn-secondary {
-  background-color: transparent;
-  color: #f5483b;
-  border: 1px solid #f5483b;
+.navbar-links a.btn-primary {
+  background-color: #007bff;
 }
 
-.btn-primary:hover,
-.btn-secondary:hover {
-  background-color: #e43a2e;
+.navbar-links a.btn-secondary {
+  background-color: #6c757d;
 }
 
-/* SearchBar styles */
-/* SearchBar styles */
+/* Search Bar */
 .search-bar {
   display: flex;
-  align-items: center;
-  margin-top: 20px;
+  margin-bottom: 2rem;
 }
 
-.search-bar input {
-  width: 400px;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px 0 0 4px;
+.search-bar input[type="text"] {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+  margin-right: 1rem;
 }
 
 .search-bar select {
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 0;
-  margin-left: -1px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .search-bar button {
-  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
   border: none;
-  background-color: #f5483b;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 0 4px 4px 0;
+  padding: 1rem;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .search-bar button:hover {
-  background-color: #e43a2e;
+  background-color: #3e8e41;
 }
 
-/* FilterOptions styles */
-.filter-options {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  margin-right: 20px;
-}
-
-/* ResultsFilter styles */
+/* Results Filter */
 .results-filter {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 4px;
-}
-
-/* SearchResultsPage styles */
-.filters-container {
   display: flex;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-.search-bar button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #f5483b;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 0 4px 4px 0;
+.results-filter h4 {
+  margin-right: 1rem;
+}
+
+.results-filter div {
+  margin-right: 1rem;
+}
+
+.results-filter label {
   cursor: pointer;
 }
 
-.search-bar button:hover {
-  background-color: #e43a2e;
+/* Listing Card */
+.listing-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-/* HeroBanner styles */
-.hero-banner {
-  background-size: cover;
-  background-position: center;
-  height: 500px;
+.listing-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.listing-card h3 {
+  margin-top: 0.5rem;
+}
+
+.listing-card p {
+  margin-bottom: 0.5rem;
+}
+
+/* Not Found Page */
+.not-found {
+  text-align: center;
+  padding: 2rem;
+}
+
+.not-found h1 {
+  margin-bottom: 1rem;
+}
+
+.not-found ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.not-found li {
+  margin-bottom: 0.5rem;
+}
+
+.not-found a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Sign Up Form */
+.signup-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signup-form label {
+  margin-bottom: 0.5rem;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form input[type="email"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.signup-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.signup-form button:hover {
+  background-color: #3e8e41;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-form label {
+  margin-bottom: 0.5rem;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.login-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login-form button:hover {
+  background-color: #3e8e41;
+}
+
+.login-form .social-login {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.login-form .social-login button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin: 0.5rem;
+  cursor: pointer;
+  display: flex;
   align-items: center;
 }
 
-.hero-banner h1 {
-  color: #fff;
-  font-size: 36px;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+.login-form .social-login button:hover {
+  background-color: #f0f0f0;
 }
 
-/* HomePage styles */
-.homepage {
-  padding: 50px 0;
+.login-form .social-login button i {
+  margin-right: 0.5rem;
 }
+
+/* Additional Considerations */
+
+/* Add styles for other components as needed (e.g., Header.js, Footer.js) */
+
+/* Use media queries to adjust styles for different screen sizes */
+
+/* Consider using a CSS preprocessor like Sass or Less for better organization and maintainability */

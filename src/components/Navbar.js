@@ -13,7 +13,7 @@ function Navbar() {
         <Link to="/become-a-host">Become a host</Link>
         <Link to="/help">Help</Link>
         <Link to="/SignupForm" className="btn btn-primary">Sign up</Link>
-        <Link to="/log-in" className="btn btn-secondary">Log in</Link>
+        <Link to="/LoginForm" className="btn btn-secondary">Log in</Link>
       </div>
     </nav>
   );
