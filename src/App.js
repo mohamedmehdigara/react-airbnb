@@ -9,6 +9,8 @@ import "./App.css";
 import SignupForm from './components/SignupForm';
 import LoginForm from './components/LoginForm';
 import BecomeHost from './components/BecomeHost';
+import Help from './components/Help';
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <Route path="/SignupForm" element={<SignupForm/>} />
           <Route path="/LoginForm" element={<LoginForm/>} />
           <Route path="/become-host" element={<BecomeHost />} /> 
+          <Route path="/help" element={<Help />} />
 
 
           <Route element={<NotFoundPage/>} />
