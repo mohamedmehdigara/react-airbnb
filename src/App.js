@@ -10,7 +10,7 @@ import SignupForm from './components/SignupForm';
 import LoginForm from './components/LoginForm';
 import BecomeHost from './components/BecomeHost';
 import Help from './components/Help';
-
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -26,6 +26,8 @@ function App() {
           <Route path="/LoginForm" element={<LoginForm/>} />
           <Route path="/become-host" element={<BecomeHost />} /> 
           <Route path="/help" element={<Help />} />
+          <Route path="/Profile" element={<Profile />} />
+
 
 
           <Route element={<NotFoundPage/>} />

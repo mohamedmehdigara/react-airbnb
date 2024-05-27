@@ -14,6 +14,8 @@ function Navbar() {
         <Link to="/help">Help</Link>
         <Link to="/SignupForm" className="btn btn-primary">Sign up</Link>
         <Link to="/LoginForm" className="btn btn-secondary">Log in</Link>
+        <Link to="/Profile">Profile</Link>
+
       </div>
     </nav>
   );
