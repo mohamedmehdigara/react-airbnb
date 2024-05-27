@@ -8,6 +8,7 @@ import NotFoundPage from './components/NotFoundPage';
 import "./App.css";
 import SignupForm from './components/SignupForm';
 import LoginForm from './components/LoginForm';
+import BecomeHost from './components/BecomeHost';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/listing/:id" element={<ListingDetailsPage/>} />
           <Route path="/SignupForm" element={<SignupForm/>} />
           <Route path="/LoginForm" element={<LoginForm/>} />
+          <Route path="/become-host" element={<BecomeHost />} /> 
 
 
           <Route element={<NotFoundPage/>} />
