@@ -11,6 +11,9 @@ import LoginForm from './components/LoginForm';
 import BecomeHost from './components/BecomeHost';
 import Help from './components/Help';
 import Profile from './components/Profile';
+import ReviewForm from './components/ReviewForm';
+import ReviewList from './components/ReviewList';
+import Reviews from './components/Reviews';
 
 function App() {
   return (
@@ -27,6 +30,12 @@ function App() {
           <Route path="/become-host" element={<BecomeHost />} /> 
           <Route path="/help" element={<Help />} />
           <Route path="/Profile" element={<Profile />} />
+          <Route path="/ReviewForm" element={<ReviewForm />} />
+          <Route path="/reviews" element={<Reviews />} /> {/* New Route */}
+
+
+          <Route path="/ReviewList" element={<ReviewList />} />
+
 
 
 
