@@ -265,3 +265,40 @@ body {
 /* Use media queries to adjust styles for different screen sizes */
 
 /* Consider using a CSS preprocessor like Sass or Less for better organization and maintainability */
+
+
+/* Styles for SearchBar.js (if needed) */
+.search-bar {
+  display: flex; /* Adjust as needed */
+  /* Other styles for SearchBar */
+}
+
+.search-bar input,
+.search-bar select {
+  /* Styles for input and select elements within SearchBar */
+}
+
+/* Styles for Filters.js */
+.filters {
+  margin-top: 20px; /* Adjust spacing as needed */
+  border: 1px solid #ddd; /* Optional border */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.filters h2 {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.filters div {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.filters label {
+  display: block; /* Adjust layout as needed */
+  margin-bottom: 5px; /* Adjust spacing as needed */
+}
+
+.filters input[type="number"],
+.filters input[type="checkbox"] {
+  margin-right: 5px; /* Adjust spacing as needed */
+}

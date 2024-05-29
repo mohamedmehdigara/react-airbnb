@@ -14,12 +14,14 @@ import Profile from './components/Profile';
 import ReviewForm from './components/ReviewForm';
 import ReviewList from './components/ReviewList';
 import Reviews from './components/Reviews';
+import Filters from './components/Filters';
 
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
+        <Filters />
 
         <Routes>
           <Route exact path="/" element={<HomePage/>} />
