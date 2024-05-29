@@ -16,11 +16,11 @@ function SearchBar() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Redirect to search results page with search query and filters
-    navigate.push(`/search?query=${searchInput}&homeType=${homeType}`);
+    navigate(`/search?query=${searchInput}&homeType=${homeType}`);
     setSearchInput('');
     setHomeType('');
   };
+   
 
   return (
     <form className="search-bar" onSubmit={handleSubmit}>
